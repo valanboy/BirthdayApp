@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Birthday remainder</title>
+    <link
+      rel="stylesheet"
+      href="/index.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="top blue-bgr">🎉</span>
+      <form class="birthday-form">
+        <label class="birthday-label">
+          Set birthday reminder for yourself and loved ones 🎉🎉
+        </label>
+        <input
+          type="text"
+          class="birthday-input"
+          placeholder="Username"
+          required
+          id="username" />
+        <input
+          type="email"
+          class="birthday-input"
+          placeholder="Email"
+          required
+          id="email" />
+        <label>
+          <p class="warning">
+            If you are setting up this reminder for Someone other than you.
+            Kindly indicate the name, else leave it blank.
+          </p>
+          <input
+            type="text"
+            name=""
+            placeholder="Name of your loved one celebrating"
+            class="birthday-input"
+            id="other" />
+        </label>
+        <input
+          type="date"
+          class="birthday-input"
+          placeholder="birthday"
+          required
+          id="birthday" />
+        <label class="radio-wrapper">
+          <input
+            type="radio"
+            name="gender"
+            value="male"
+            id="male"
+            class="radio-input" />
+          Male
+
+          <input
+            class="radio-input"
+            id="female"
+            type="radio"
+            name="gender"
+            value="female" />
+          Female
+        </label>
+        <button class="birthday-input btn">Set reminder</button>
+      </form>
+      <span class="bottom blue-bgr">🎉</span>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>

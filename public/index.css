@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5%;
+  background-color: #fff;
+  position: relative;
+}
+
+.birthday-form {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.2rem;
+  background-color: #101931;
+  z-index: 999999;
+  padding: 2rem 2rem;
+  color: #fff;
+  border-radius: 6px 6px;
+}
+.birthday-label {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+.birthday-input {
+  width: 95%;
+  outline: none;
+  color: #000;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+  border-radius: 8px 8px;
+  border: none;
+}
+.radio-input {
+  cursor: pointer;
+}
+.btn {
+  color: #fff;
+  background-color: #144ee3;
+  border: none;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  background-color: #5e5f61;
+}
+.blue-bgr {
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  position: fixed;
+  width: 20rem;
+  height: 20rem;
+  font-size: 14rem;
+  background-color: #144ee3;
+  border-radius: 50%;
+  text-transform: translate(60%, 0);
+  padding-left: 1rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+/* .top,
+.bottom {
+  position: fixed;
+  width: 20rem;
+  height: 20rem;
+  font-size: 14rem;
+  background-color: #144ee3;
+  border-radius: 50%;
+  text-transform: translate(60%, 0);
+  padding-left: 1rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+} */
+
+@keyframes fromLeft {
+  0% {
+    left: 5%;
+  }
+  5% {
+    left: 15%;
+  }
+  10% {
+    left: 25%;
+  }
+  15% {
+    left: 35%;
+  }
+  20% {
+    left: 45%;
+  }
+  25% {
+    left: 55%;
+  }
+  30% {
+    left: 65%;
+  }
+  35% {
+    left: 75%;
+  }
+  40% {
+    left: 85%;
+    top: 20%;
+  }
+  45% {
+    left: 85%;
+    top: 10%;
+  }
+  50% {
+    left: 85%;
+    top: 60%;
+  }
+  55% {
+    left: 85%;
+    top: 80%;
+  }
+  60% {
+    left: 75%;
+    top: 80%;
+  }
+  60% {
+    left: 65%;
+    top: 80%;
+  }
+  65% {
+    left: 55%;
+    top: 80%;
+  }
+  70% {
+    left: 35%;
+    top: 80%;
+  }
+  75% {
+    left: 5%;
+    top: 60%;
+  }
+  80% {
+    left: 5%;
+    top: 40%;
+  }
+  85% {
+    left: 5%;
+    top: 20%;
+  }
+  90% {
+    left: 5%;
+    top: 10%;
+  }
+  95% {
+    left: 5%;
+    top: 5%;
+  }
+  100% {
+    left: 0%;
+    top: 0%;
+  }
+}
+@keyframes fromRight {
+  0% {
+    left: 95%;
+  }
+  5% {
+    left: 85%;
+  }
+  10% {
+    left: 75%;
+  }
+  15% {
+    left: 65%;
+  }
+  20% {
+    left: 55%;
+  }
+  25% {
+    left: 45%;
+  }
+  30% {
+    left: 35%;
+  }
+  35% {
+    left: 25%;
+  }
+  40% {
+    left: 5%;
+    top: 80%;
+  }
+  45% {
+    left: 5%;
+    top: 60%;
+  }
+  50% {
+    left: 5%;
+    top: 40%;
+  }
+  55% {
+    left: 5%;
+    top: 20%;
+  }
+  60% {
+    left: 5%;
+    top: 10%;
+  }
+  60% {
+    left: 20%;
+    top: 5%;
+  }
+  65% {
+    left: 40%;
+    top: 5%;
+  }
+  70% {
+    left: 60%;
+    top: 5%;
+  }
+  75% {
+    left: 80%;
+    top: 5%;
+  }
+  80% {
+    left: 85%;
+    top: 40%;
+  }
+  85% {
+    left: 85%;
+    top: 60%;
+  }
+  90% {
+    left: 85%;
+    top: 80%;
+  }
+  95% {
+    left: 85%;
+    top: 95%;
+  }
+  100% {
+    left: 0%;
+    top: 0%;
+  }
+}
+.top {
+  animation-name: fromLeft;
+}
+.bottom {
+  top: 70%;
+  left: 80%;
+  animation-name: fromRight;
+}
+.alert {
+  z-index: 199999;
+  margin: 0;
+  width: 100vw;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  font-weight: 600;
+}
+.alert--fail {
+  background-color: red;
+  color: #fff;
+}
+.alert--success {
+  background-color: #101931;
+  color: #fff;
+}
+.warning {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 56.5em) {
+  .birthday-form {
+    width: 50%;
+  }
+  .blue-bgr {
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    position: fixed;
+    width: 12rem;
+    height: 12rem;
+    font-size: 8rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .container {
+    padding-top: 10%;
+  }
+  .birthday-form {
+    width: 80%;
+    transform: translateY(20%);
+  }
+  .blue-bgr {
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    position: fixed;
+    width: 8rem;
+    height: 8rem;
+    font-size: 5rem;
+    z-index: 0;
+  }
+  .bottom {
+    top: 90%;
+    left: 80%;
+    animation-name: fromRight;
+  }
+}
