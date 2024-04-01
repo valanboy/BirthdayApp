@@ -4,7 +4,7 @@
 
 This is a simple but helpful web app, keep you notified about the birthday of your loved ones or yourself. With a few clicks, you don't have to worry about when your birthday is or the birthday of your loved ones.
 
-# LIVE LINK : 
+# LIVE LINK : https://birthdayapp-e7ns.onrender.com
 
 # TECH STACK
 
